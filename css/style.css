@@ -1,0 +1,61 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows: repeat(6, minmax(1fr, auto));
+    gap: 10px;
+    width: 75%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    height: 100vh;
+}
+
+.container div {
+    background: cadetblue;
+    padding: 30px;
+
+}
+
+.container div:nth-child(even){
+    background: blueviolet;
+}
+
+.one {
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+
+.two {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;   
+}
+.five {
+    grid-column-start: 3;
+grid-column-end: 7;
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.three {
+    grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 4;
+grid-row-end: 5;
+}
+
+.nine{
+    grid-column-start: 5;
+grid-column-end: 7;
+grid-row-start: 3;
+grid-row-end: 4;
+}
